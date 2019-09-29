@@ -2,7 +2,7 @@
 using Unity.Mathematics;
 using UnityEngine;
 
-
+[UpdateBefore(typeof(MoveSystem))]
 public class RandomMoveSystem : ComponentSystem
 {
     protected override void OnUpdate()
