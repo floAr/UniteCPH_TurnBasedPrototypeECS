@@ -7,11 +7,11 @@ public class InputSystem : ComponentSystem
     private void QueueMoveIntent(Entity id, int2 dir)
     {
         PostUpdateCommands.AddComponent<MoveIntention>(id, new MoveIntention() { direction_xz = dir });
-        //PostUpdateCommands.RemoveComponent<AwaitActionFlag>(id);
+        PostUpdateCommands.RemoveComponent<AwaitActionFlag>(id);
     }
     protected override void OnUpdate()
     {
-        Entities.WithAll<PlayerComponent>().ForEach((Entity id) =>
+        Entities.WithAll<PlayerComponent,AwaitActionFlag>().ForEach((Entity id) =>
         {
             if (Input.GetKeyDown(KeyCode.W))
             {

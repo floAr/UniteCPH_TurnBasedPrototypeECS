@@ -14,6 +14,6 @@ public class Player : MonoBehaviour, IConvertGameObjectToEntity
     public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
     {
         dstManager.AddComponent<PlayerComponent>(entity);
-        //dstManager.AddComponent<AwaitActionFlag>(entity);
+        dstManager.AddComponent<AwaitActionFlag>(entity);
     }
 }
