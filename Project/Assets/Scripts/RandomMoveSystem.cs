@@ -2,7 +2,7 @@
 using Unity.Mathematics;
 using UnityEngine;
 
-
+[DisableAutoCreation]
 public class RandomMoveSystem : ComponentSystem
 {
     protected override void OnUpdate()

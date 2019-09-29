@@ -2,6 +2,7 @@
 using Unity.Mathematics;
 using static Unity.Mathematics.math;
 
+[DisableAutoCreation]
 public class MoveSystem : ComponentSystem
 {
     public int grid_x = 5; 
