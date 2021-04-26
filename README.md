@@ -1,3 +1,5 @@
+[![](http://img.youtube.com/vi/mL4qrt-15TE/0.jpg)](http://www.youtube.com/watch?v=mL4qrt-15TE "DE Building a turn-based game prototype using ECS - Unite Copenhagen")
+
 # UniteCPH_TurnBasedPrototypeECS
 Code for the talk 'Building a Turn-Based Game Prototype …The ECS Way' from Unite Copenhagen 2019
 The code is structured using branches and follows the structure of the presentation.
